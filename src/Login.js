@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap"
+import {Container} from "react-bootstrap"
 
 const client_id = "0c9eb454ffc2431cabd8ddc114204945"; 
 const redirect_uri = "http://localhost:3000"
@@ -14,8 +14,10 @@ const AUTH_URL = `https://accounts.spotify.com/authorize
 export default function Login() {
 
     return (
-        <div>
-
-        </div>
+        <Container>
+            <a className="btn btn-success btn-lg" href={AUTH_URL}>
+                Login with Spotify
+            </a>
+        </Container>
     )
 }
